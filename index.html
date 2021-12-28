@@ -5,9 +5,208 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="icon/css/all.css">
+    <link rel="stylesheet" href="css/reponsive.css">
 </head>
 <body>
-    <h1>hellp</h1>
+    <div class="w3">
+        <div class="header">
+            <ul class="header-list">
+                <li class="header-items__link">
+                    <a href="#">HOME</a>
+                </li>
+                <li class="header-items__link">
+                    <a href="#band">BAND</a>
+                </li>
+                <li class="header-items__link">
+                    <a href="#tour">TOUR</a>
+                </li>
+                <li class="header-items__link">
+                    <a href="#contact">CONTACT</a>
+                </li>
+                <li class="header-items__link header-items__link--modify ">
+                    <a href="#">
+                        MORE
+                        <i class="header-items__link__icon fas fa-sort-down"></i>
+                    </a>
+                    <ul class="header-more-list">
+                        <li class="header-more-list-items"><a href="">Merchandise</a></li>
+                        <li class="header-more-list-items"><a href="">Extras</a></li>
+                        <li class="header-more-list-items"><a href="">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="header-search">
+                <i class="header-search__icon fas fa-search"></i>
+            </div>
+            <div class="menu-mobile js-menu-mobile">
+                <i class="menu-mobile-icon fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slider-content">
+                <h3 class="slider-name">Chicago</h3>
+                <p class="slider-decoration">Thank you, Chicago - A night we don't forget</p>
+            </div>
+        </div>
+        <div class="container">
+            <div id="band" class="container-section">
+                <h3 class="section-name">the band</h3>
+                <p class="section-sub-name">We love music</p>
+                <p class="section-paragraph">
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="section-member">
+                    <div class="section-information">
+                        <span class="section-information-name">Name</span>
+                        <img src="./img/bandmember.jpg" alt="" class="section-information-img">
+                    </div>
+                    <div class="section-information ">
+                        <span class="section-information-name">Name</span>
+                        <img src="img/bandmember.jpg" alt="" class="section-information-img">
+                    </div>
+                    <div class="section-information">
+                        <span class="section-information-name">Name</span>
+                        <img src="img/bandmember.jpg" alt="" class="section-information-img">
+                    </div>
+                </div>
+            </div>
+            <div id="tour" class="tour-dates">
+                <div class="container-section">
+                    <h3 class="section-name">TOUR DATES</h3>
+                    <p class="section-sub-name">Remember to book your tickets!</p>
+                    <ul class="tickets-list">
+                        <li class="tickets-list-items">
+                            September
+                            <span class="modify-sold">Sold out</span>
+                        </li>
+                        <li class="tickets-list-items">
+                            October
+                            <span class="modify-sold">Sold out</span>
+                        </li>
+                        <li class="tickets-list-items">
+                            November
+                            <span class="ticket-number">3</span>
+                        </li>
+                    </ul>
+                    <div class="place">
+                        <div class="place-infor">
+                            <img src="img/newyork.jpg" alt="" class="place-infor-img">
+                            <div class="place-infor-location">
+                                <span class="place-infor-name">New York</span>
+                                <p class="place-infor-date">Fri 27 Nov 2016</p>
+                                <p class="place-infor-decoration">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="buy-ticket js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="place-infor">
+                            <img src="img/paris.jpg" alt="" class="place-infor-img">
+                            <div class="place-infor-location">
+                                <span class="place-infor-name">Paris</span>
+                                <p class="place-infor-date">Sat 28 Nov 2016</p>
+                                <p class="place-infor-decoration">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="buy-ticket js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="place-infor">
+                            <img src="img/sanfasic.jpg" alt="" class="place-infor-img">
+                            <div class="place-infor-location">
+                                <span class="place-infor-name">San Francisco</span>
+                                <p class="place-infor-date">Sun 29 Nov 2016</p>
+                                <p class="place-infor-decoration">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="buy-ticket js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="container-section">
+                <h3 class="section-name">CONTACT</h3>
+                <p class="section-sub-name">Fan? Drop a note!</p>
+                <div class="contact">
+                    <div class="contact-connect">
+                        <p href="" class="contact-connect-location">
+                            <i class="contact-connect-icon fas fa-map-marker-alt"></i>
+                            Chicago, US
+                        </p>
+                        <p href="" class="contact-connect-phone">
+                            <i class="contact-connect-icon fas fa-phone-alt"></i>
+                            Phone:+00 151515
+                        </p>
+                        <p href="" class="contact-connect-email">
+                            <i class="contact-connect-icon fas fa-envelope"></i>
+                            Email: mail@mail.com
+                        </p>
+                    </div>
+                    <div class="contact-connect-input">
+                        <form action="">
+                            <div class="contact-connect-input-infor">
+                                <input class="contact-connect-input-heading" type="text" placeholder="Name" required>
+                                <input class="contact-connect-input-heading" type="email" placeholder="Email" required>
+                            </div>
+                            <div >
+                                <input class="contact-connect-input-message" type="text" placeholder="Message" required>
+                            </div>
+                            <input class="contact-connect-input-submit" type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-img"></div>
+            <div class="social">
+                <i class="social-icon fab fa-facebook-square"></i>
+                <i class="social-icon fab fa-instagram"></i>
+                <i class="social-icon fab fa-snapchat"></i>
+                <i class="social-icon fab fa-pinterest-p"></i>
+                <i class="social-icon fab fa-twitter"></i>
+                <i class="social-icon fab fa-linkedin-in"></i>
+            </div>
+            <div >
+                <p class="powere-w3">Powered by w3.css</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <header class="modal-header">
+                <i class="icon-bag fas fa-suitcase"></i>
+                Tickets
+            </header>
+            <div class="modal-close js-modal-close">
+                <i class="icon-close fas fa-times"></i>
+            </div>
+            <div class="modal-body">
+                <label for="" class="modal-label">
+                    <i class="icon-cart fas fa-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" class="modal-input" placeholder="How many?">
+                <label for="" class="modal-label">
+                    <i class="icon-user fas fa-user"></i>
+                    Send to
+                </label>
+                <input type="text" class="modal-input" placeholder="Enter email">
+                <button class="modal-btn">
+                    PAY
+                    <i class="icon-check fas fa-check"></i>
+                </button>
+            </div>
+            <footer class="modal-footer">
+                <p class="modal-help">
+                    <span class="modal-help-heading">Need</span>
+                    <a href="" class="modal-help-link">help?</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+    <script src="./main.js"></script>
 </body>
 </html>

@@ -1,0 +1,73 @@
+html{
+    /* font-size: 62.5%;
+    line-height: 1.6rem; */
+    font-family: 'Roboto', sans-serif;
+}
+.w3{
+    position: relative;
+}
+.header{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+.container{
+    margin-top: 46px;
+}
+.footer{
+    text-align: center;
+    padding: 64px 0;
+    font-size: 15px;
+}
+.slider{
+    margin-top: 46px;
+}
+
+.tour-dates{
+    background-color: #000;
+    color: #fff;
+}
+.modal{
+    font-family: 'Lato', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal-container{
+    position: relative;
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    animation: modalFadein ease 0.5s;
+}
+.modal-footer{
+    margin:0 16px 16px 0;
+    float: right;
+    font-size: 14px;
+}
+.open{
+    display: flex;
+}
+
+@keyframes modalFadein{
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
